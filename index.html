@@ -3,14 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat App</title>
+    <title>DRUGTOX PRO</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
             text-align: center;
-            padding: 50px;
+            background-color: #f4f4f4;
         }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(243, 188, 87, 0.9), rgba(255, 255, 255, 0.9)), url('/api/placeholder/1200/600');
+            height: 500px;
+            color: rgb(14, 14, 14);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 60px;
+            padding: 20px;
+        }
+
+        .slogan {
+            font-size: 24px;
+            font-weight: bold;
+            font-style: italic;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
         .button {
             background-color: #007BFF;
             color: white;
@@ -19,18 +42,23 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            transition: 0.3s ease-in-out;
         }
+
         .button:hover {
             background-color: #0056b3;
+            transform: scale(1.05);
         }
     </style>
 </head>
 <body>
 
-    <h1>Welcome to Chat App</h1>
-    <p>Click the button below to start the chat.</p>
-
-    <button class="button" onclick="window.open('http://localhost:8501', '_blank')">Go to Chat</button>
+    <div class="hero">
+        <div class="slogan">"Empowering Research, One Prediction at a Time!"</div>
+        <button class="button" onclick="window.location.href='https://vardhidimple-drugtoxpro-streamlit-app-0mighh.streamlit.app/'">
+            Go to DRUGTOX PRO
+        </button>
+    </div>
 
 </body>
 </html>
