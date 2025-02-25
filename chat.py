@@ -26,6 +26,7 @@ import streamlit.components.v1 as components
 import streamlit as st
 import streamlit.components.v1 as components
 
+
 # Global Styling for UI and Chatbot Positioning
 st.markdown(
     """
@@ -112,6 +113,7 @@ chatbot_code = """
 
 # Embed chatbot
 components.html(chatbot_code, height=500, width=400)
+
 
 
 # Function to display the Welcome page
